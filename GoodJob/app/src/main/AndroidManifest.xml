@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.goodjoob">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design">
+        <activity android:name=".PerfilLogado" />
+        <activity
+            android:name=".TecnicoPerfil"
+            android:label="Perfil do Tecnico" />
+        <activity android:name=".ui.ProjetoBradescoMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.TelaCheckMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name=".ui.CadastrarUsuario" />
+        <activity android:name=".ui.ListarMainActivity" />
+        <activity android:name=".ui.Activity_PreencherServico"/>
+        <activity android:name=".ui.Activity_Trabalhos"
+            android:label="Trabalhos para você:"/>
+        <activity android:name=".ui.Tela_Solicitacao_Cliente"
+            android:label="Serviço"/>
+        <activity android:name=".ui.Tela_SolicitacaoTrabalho_Tecnico"
+            android:label="Detalhes do Serviço"/>
+        <activity android:name=".ui.Tela_Seus_Servicos"
+            android:label="Seus serviços cadastrados:"/>
+        <activity android:name=".ui.ListarSolicitacoes"
+            android:label="Solicitações:" />
+        <activity android:name=".ui.Tela_Avaliando_Tecnico" />
+        <activity android:name=".ui.Alterar_Servico"
+            android:label="Alteração de serviço:"/>
+        <activity android:name=".ui.List_Adicionar_Servico"
+            android:label="Adicionando serviço:"/>
+        <activity android:name=".ui.Preencher_Seu_Servico"
+            android:label="Adicionar serviço:"/>
+    </application>
+
+</manifest>

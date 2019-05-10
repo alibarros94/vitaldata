@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imagem_solicitacao"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginVertical="10dp"
+        tools:srcCompat="@tools:sample/avatars[8]" />
+
+    <LinearLayout
+        android:layout_width="172dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textData_orcamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data e hora"
+            android:textColor="@color/corbranca"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textTecnicoOrc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do Tecnico"
+            android:textColor="@color/corbranca"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textServicoOrca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descrição"
+            android:textColor="@color/corbranca"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textValor_orcamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor"
+            android:textColor="@color/corbranca"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textStatusSoli"
+        android:layout_width="135dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="15sp" />
+</LinearLayout>

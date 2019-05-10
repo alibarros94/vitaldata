@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    tools:context=".TecnicoPerfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Avaliação do Tecnico "
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="108dp"
+            android:layout_height="89dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/ic_perfiltecnico"
+            tools:ignore="VectorDrawableCompat" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal">
+
+            <TextView
+                android:id="@+id/textNomeTecAvaliando"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:hint="Nome do tecnico"
+                android:textSize="18sp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textSoliCli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Cortês"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#303030"
+            android:numStars="5"
+            android:rating="4.5"
+            android:progressTint="@color/common_google_signin_btn_text_dark_default"/>
+
+        <TextView
+            android:id="@+id/textSoliCli3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Organizado"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.5"
+            android:progressTint="@color/common_google_signin_btn_text_dark_default"/>
+
+
+        <TextView
+            android:id="@+id/textSoliCli5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Resolveu o problema"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="5"
+            android:progressTint="@color/common_google_signin_btn_text_dark_default"/>
+
+
+        <TextView
+            android:id="@+id/textSoliCli2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Satisfação"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="5"
+            android:progressTint="@color/common_google_signin_btn_text_dark_default"/>
+
+
+        <TextView
+            android:id="@+id/textSoliCli4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Indicação"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="4.7"
+            android:progressTint="@color/common_google_signin_btn_text_dark_default"/>
+
+        <TextView
+            android:id="@+id/textSoliCli4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Media"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:numStars="5"
+            android:rating="4.7"
+            android:progressTint="@color/common_google_signin_btn_text_dark_default"/>
+    </LinearLayout>
+
+
+</ScrollView>

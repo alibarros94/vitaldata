@@ -1,0 +1,32 @@
+ .carbranca{
+        color: #ffffff;
+        /* Poderia usar:;
+        color: #ff0000;*/
+        /* Poderia usar:;
+        color: rgb(255, 0, 0);*/
+    }
+    
+section table{
+	width:100%;
+	border:1px solid #EBEBEB;
+	margin-bottom:15px;
+	margin-top:6px;
+	background:#FFF1E4;
+	border-collapse:collapse;
+	font-size:13px;
+}
+
+section table th{
+	/*border-bottom:2px solid #EBEBEB;*/
+	padding:10px 0 10px 10px;
+	text-align:left;
+	color:#464646;
+	font-weight:normal;
+}
+
+section table td{
+	border-bottom:1px solid #cdcdcd;
+	padding:10px 0 10px 10px;
+	text-align:left;
+	color:#464646;
+}

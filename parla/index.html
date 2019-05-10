@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="pt" >
+
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			Suporte M2M
+		</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="#"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--===============================================================================================-->
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+		<script>
+          WebFont.load({
+            google: {"families":["Poppins:300,400,500,600,700","Roboto:300,400,500,600,700","Asap+Condensed:500"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+          });
+		</script>
+		
+		<!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+		
+		
+		<!--end::Web font -->
+        <!--begin::Base Styles -->
+		<link href="vendors.bundle.css" rel="stylesheet" type="text/css" />
+		<link href="style.bundle.css" rel="stylesheet" type="text/css" />
+		<!--end::Base Styles -->
+
+		<!--<style> .alinhamento th:nth-child(1), .alinhamento td:nth-child(1) { text-align: left; } .alinhamento th:nth-child(2), .alinhamento td:nth-child(2) { text-align: center; } .alinhamento th:nth-child(3), .alinhamento td:nth-child(3) { text-align: right; } </style>-->
+
+	</head>
+			
+	<!-- end::Head -->
+    <!-- end::Body -->
+	<body class="m--skin- m-header--fixed m-header--fixed-mobile m-aside-left--enabled m-aside-left--skin-dark m-aside-left--offcanvas m-footer--push m-aside--offcanvas-default"  >
+		<!-- begin:: Page -->
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+			
+					
+						<span>
+								<!--img src="logo.png"-->
+						</span>
+						
+
+							<div class="m-login__head">
+
+							<form class="login100-form validate-form" id="loginForm" method="post" action="http://www.parlacom.net/cgi-bin/parla" target="_blank">
+
+
+								<input type="hidden" name="Function" value="GetAllUsers">
+								<input type="hidden" name="output_type" value="html">
+								
+								
+								<select name="company" >
+								    
+									<option value="parla"> MVNO </option>
+									<option value> #### CARTEIRA 1 ####</option>
+									<option value="getrak"> Getrak </option>
+									<option value="upchip"> UpChip </option>
+									<option value="realPonto"> RealPonto </option>
+									<option value="redetrel"> RedeTrel </option>
+									<option value="redepay"> Redepay/Wenov </option> 
+									<option value="metatelecom"> MetaTelecom </option> 
+									<option value="oktor"> Oktor </option>
+									<option value="clicsat"> Clicsat</option>
+									<option value="voxter"> Voxter </option>
+									<option value="parla"> Phoebus (parla) </option>
+									<option value="parla"> Porta larga (Parla)</option>
+									<option value="parla"> Eletronuclear (parla) </option>
+									
+                                    <option value> #### CARTEIRA 2 ####</option>
+									<option value="chipfast"> Chipfast</option>
+                                    <option value="allcom"> Allcom </option>
+                                    <option value="onlink"> Onlink </option>
+                                    <option value="wiseLink"> WiseLink </option>
+                                    <option value="m2data"> M2data </option>
+                                    <option value="hunter"> Hunter </option> 
+                                    <option value="show"> Show/Simm2m </option>
+                                    <option value="matrix"> Matrix</option>
+                                    <option value="FX2"> FX2 </option>
+                                    <option value="direction"> Direction </option>
+                                    <option value="parla"> Urpay (Parla) </option>
+                                    <option value="parla"> Bionic (parla) </option>
+
+								</select>
+								
+								
+						<span class="login100-form-title p-b-34 p-t-25">
+						Painel do Suporte
+						</span>
+                        		<input type="hidden" name="na" value="no" />
+
+								<div class="wrap-input100 validate-input" >
+									<input class="input100"   type="text" name="Admin" placeholder="Nome de Usuario" autocomplete="on">
+									<span class="focus-input100" data-placeholder="&#xf207;"></span>
+								</div>
+								
+								<div class="wrap-input100 validate-input">
+									<input class="input100" type="password" name="AdminPwd" placeholder="Senha" autocomplete="on">
+									<span class="focus-input100" data-placeholder="&#xf207;"></span>
+								</div>
+								
+								<!--div class="row m-login__form-sub">
+									<div class="col m--align-right m-login__form-right">
+										<a href="http://www.parlacom.net/cgi-bin/parla?function=geraforgotpassword&company=upchip&output_type=html&language=pt" class="m-link" target="_blank">
+											<span class="carpreta">Esqueceu a senha?</span>
+										</a>
+									</div>
+								</div-->
+								<div class="m-login__form-action">
+									<input id="m_login_signin_submit" type="submit" class="btn btn-focus m-btn m-btn--pill m-btn--custom m-btn--air m-login__btn m-login__btn--primary" value="Entrar">
+									</input>
+								</div>
+								<br>
+							</form>
+<table id="servicestable" border="1">
+	<tbody>
+
+  <tr>
+    <th>Sistemas</th>
+    <th>Google Docs</th> 
+    <th>Scripts</th>
+  </tr>
+
+  <tr>
+    <td><a href="http://support.parlacom.net/tickets" class="m-link" target="_blank">Tickets</a></td>
+    <td><a href="https://docs.google.com/spreadsheets/d/1ze0oGEffscRhuSCuU6anbXYy1kpl9bN9REHBFk2Q0YM/edit?ts=5c617da9#gid=348473483" class="m-link" target="_blank">Pendencias</a></td> 
+    <td><a href="https://docs.google.com/document/d/19T2zT-S85ylZAxBwwjqdJ-e5EdlL0k-_RakvU70q5To/edit" class="m-link" target="_blank">Atendimento</a></td> 
+  </tr>
+  <tr>
+    <td><a href="http://parlacom.net.br/wp-login.php?redirect_to=http%3A%2F%2Fwww.parlacom.net.br%2Fwp-admin%2F&reauth=1" class="m-link" target="_blank">FAQs</a></td>
+    <td><a href="https://docs.google.com/spreadsheets/d/1NQy7FYv50za0fy7k4Ul1aaeN3NlnuGCBlqtZbh_9CWU/edit?ts=5b3cbdec#gid=0" class="m-link" target="_blank">Logins RealPonto</a></td>
+    <td><a href="https://docs.google.com/document/d/1ewIrT36aT8KO2bV2n-v51kbCm16--rz-U1nEac-zFg8/edit" class="m-link" target="_blank">Acessos</a></td>  
+  </tr>
+  <tr>
+    <td><a href="http://crm.parlacom.net/" class="m-link" target="_blank">CRM</a></td>
+    <td><a href="https://docs.google.com/spreadsheets/d/1CK_iA_CSuCyDnwb9vUjSZ5UOrH-aLlSy5DgpkNHnSOY/edit?ts=5a7c91d7#gid=0" class="m-link" target="_blank">Gestão Telecom</a></td> 
+    <td><a href="https://docs.google.com/document/d/1HBK8HLsZc56nQJ4xhXtCCYgyC1qnvlUf7_cqi1Upzy4/edit" class="m-link" target="_blank">Operadoras</a></td> 
+  </tr>
+  <tr>
+    <td><a href="https://hangouts.google.com/?hl=pt-BR" class="m-link" target="_blank">Hangouts</a></td>
+    <td><a href="https://docs.google.com/spreadsheets/d/1ze0oGEffscRhuSCuU6anbXYy1kpl9bN9REHBFk2Q0YM/edit?usp=sharing" class="m-link" target="_blank">VPN em aberto</a></td> 
+    <td><a href="https://docs.google.com/spreadsheets/d/17gGYZt7NtkK-K1XRD6rPxqxf1lqGNbx644w3ghJBb44/edit#gid=0" class="m-link" target="_blank">Sintaxes do CSV</a></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www1vps.parlacom.net" class="m-link" target="_blank">WWW1vps</a></td>
+    <td><a href="https://docs.google.com/spreadsheets/d/1OiGE27HYU4id2CZF9gWSKu71EuSIBUPHGPP2pwi4_1c/edit?usp=sharing" class="m-link" target="_blank">Pedidos da Allcom</a></td> 
+    <td><a href="https://docs.google.com/spreadsheets/d/17gGYZt7NtkK-K1XRD6rPxqxf1lqGNbx644w3ghJBb44/edit#gid=0" class="m-link" target="_blank">Sintaxes do LOGs</a></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www2vps.parlacom.net" class="m-link" target="_blank">WWW2vps</a></td>
+    <td><a href="https://docs.google.com/spreadsheets/d/1xtWbH-CH3TJ9v0ySFNz58EjPTX_1Vojp75yrDLaKDVs/edit#gid=0" class="m-link" target="_blank">Teste do MVNO</a></td> 
+    <td>xxxx</td> 
+  </tr>
+  <tr>
+    <td><a href="https://74.208.43.102/?src=connect" class="m-link" target="_blank">OpenVPN</a></td>
+    <td>xxxx</td> 
+    <td>xxxx</td> 
+  </tr>
+  <tr>
+    <td><a href="https://parlacom.net/xml/" class="m-link" target="_blank">APIs Parlacom</a></td>
+    <td>xxxx</td> 
+    <td>xxxx</td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.vodafone.com.br/plataformadeconsumo/" class="m-link" target="_blank">Vodafone</a></td>
+    <td>xxxx</td> 
+    <td>xxxx</td> 
+  </tr>
+  <tr>
+    <td><a href="https://iot.algartelecom.com.br/login" class="m-link" target="_blank">Algar</a></td>
+    <td>xxxx</td> 
+    <td>xxxx</td> 
+  </tr>
+  <tr>
+    <td><a href="https://m2m-vivo-br.telefonica.com/#/" class="m-link" target="_blank">SmartCenter</a></td>
+    <td>xxxx</td> 
+    <td>xxxx</td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/interno/" class="m-link" target="_blank">Lista de MVNOs</a></td>
+    <td>xxxx</td> 
+    <td>xxxx</td> 
+  </tr>
+</tbody>
+</table>
+<span class="login100-form-title p-b-34 p-t-25">
+	Lista de MVNOs
+</span>
+
+<table id="servicestable" border="1">
+	<tbody>
+
+  <tr>
+    <th>MVNO/empresa</th>
+    <th>empresa.parlacom</th> 
+    <th>MOBILE.empresa</th>
+  </tr>
+
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/allcom" class="m-link" target="_BLANK">mvno/allcom</a></td>
+    <td><a href="http://www.parlacom.net/mvno/allcom" class="m-link" target="_BLANK">allcom.parlacom.net</a></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/chipfast" class="m-link" target="_BLANK">chipfast</a></td>
+    <td></td>
+    <td></td>  
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/cielo"class="m-link" target="_BLANK">cielo</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/clarocorp"class="m-link" target="_BLANK">clarocorp</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/clicsat"class="m-link" target="_BLANK">clicsat</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/cw"class="m-link" target="_BLANK">cw</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/demo"class="m-link" target="_BLANK">demo</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/direction"class="m-link" target="_BLANK">direction</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/fx2"class="m-link" target="_BLANK">fx2</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/getrak"class="m-link" target="_BLANK">getrak</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/hunter"class="m-link" target="_BLANK">hunter</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/m2data"class="m-link" target="_BLANK">m2data</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/matrix"class="m-link" target="_BLANK">matrix</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/metatelecom"class="m-link" target="_BLANK">metatelecom</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/nextel"class="m-link" target="_BLANK">nextel</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/oktor"class="m-link" target="_BLANK">oktor</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/onlink"class="m-link" target="_BLANK">onlink</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/parla"class="m-link" target="_BLANK">parla</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/portalarga"class="m-link" target="_BLANK">portalarga</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/realponto"class="m-link" target="_BLANK">realponto</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/redepay"class="m-link" target="_BLANK">redepay</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/redetrel"class="m-link" target="_BLANK">redetrel</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/show"class="m-link" target="_BLANK">show</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/upchip"class="m-link" target="_BLANK">upchip</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/urpay"class="m-link" target="_BLANK">urpay</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/voxter"class="m-link" target="_BLANK">voxter</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/wiselink"class="m-link" target="_BLANK">wiselink</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+  <tr>
+    <td><a href="http://www.parlacom.net/mvno/yoopay"class="m-link" target="_BLANK">yoopay</a></td>
+    <td></td> 
+    <td></td> 
+  </tr>
+</tbody>
+</table>
+
+								<!--div class="">
+									<span class="carbranca">
+							   		 <a href="http://support.parlacom.net/tickets" class="m-link" target="_blank">Tickets</a>
+									</span>
+								</div>
+
+								<div class="">
+									<span class="carbranca">
+							   		 <a href="http://parlacom.net.br/wp-login.php?redirect_to=http%3A%2F%2Fwww.parlacom.net.br%2Fwp-admin%2F&reauth=1" class="m-link" target="_blank">FAQs</a>
+									</span>
+								</div>
+								
+								<div class="">
+									<span class="carbranca">
+							   		 <a href="https://m2m-vivo-br.telefonica.com/#/" class="m-link" target="_blank">SmartCenter</a>
+									</span>
+								</div>
+								
+								<div class="">
+									<span class="carbranca">
+							   		 <a href="https://hangouts.google.com/?hl=pt-BR" class="m-link" target="_blank">Hangouts</a>
+									</span>
+								</div>
+
+								<div class="">
+									<span class="carbranca">
+							   		 <a href="https=://www1vps.parlacom.net" class="m-link" target="_blank">WWW1vps</a>
+									</span>
+								</div>
+
+								<div class="">
+									<span class="carbranca">
+							   		 <a href="https=://www2vps.parlacom.net" class="m-link" target="_blank">WWW2vps</a>
+									</span>
+								</div>
+
+								<div class="">
+									<span class="carbranca">
+							   		 <a href="https://74.208.43.102/?src=connect" class="m-link" target="_blank">OpenVPN</a>
+									</span>
+								</div>
+							
+								<div class="">
+									<span class="carbranca">
+							   		 <a href="https://docs.google.com/spreadsheets/d/1xtWbH-CH3TJ9v0ySFNz58EjPTX_1Vojp75yrDLaKDVs/edit#gid=0" class="m-link" target="_blank">Teste do MVNO</a>
+									</span>
+								</div>
+							
+							
+								<div class="">
+									<span class="carbranca">
+							   		 <a href="https://docs.google.com/spreadsheets/d/1NQy7FYv50za0fy7k4Ul1aaeN3NlnuGCBlqtZbh_9CWU/edit?ts=5b3cbdec#gid=0" class="m-link" target="_blank">Logins RealPonto</a>
+									</span>
+								</div-->
+
+							
+			</div>
+		</div>
+	</div>
+	
+
+		<!-- end:: Page -->
+    	<!--begin::Base Scripts -->
+		<script src="vendors.bundle.js" type="text/javascript"></script>
+		<script src="scripts.bundle.js" type="text/javascript"></script>
+		<!--end::Base Scripts -->   
+        <!--begin::Page Snippets -->
+
+		<!--end::Page Snippets -->
+
+        <script language="JavaScript" type="text/javascript">
+			var frmvalidator = new Validator("loginForm");    
+			frmvalidator.addValidation("Admin","req","Please Enter  Login Name");
+			frmvalidator.addValidation("Admin","alnum","Login : not allowed Special characters");
+			frmvalidator.addValidation("AdminPwd","req","Please Enter  Password");
+			//frmvalidator.addValidation("AdminPwd","alnum","Password : not allowed Special characters");			
+			
+		</script>
+	</body>
+	<!-- end::Body -->
+</html>

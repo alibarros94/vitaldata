@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    tools:context=".TecnicoPerfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Avalie o Tecnico a seguir de acordo com o seu nivel de resposta:"
+            android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="108dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_perfiltecnico"
+        tools:ignore="VectorDrawableCompat" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/textNomeTecAvaliando"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Nome do tecnico" />
+
+        <TextView
+            android:id="@+id/textDataAvaliando"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nome do tecnico"
+            android:text="Concluiu o serviço de Manutenção" />
+
+        <TextView
+            android:id="@+id/textTextData4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nome do tecnico"
+            android:text="Data e hora do termino do serviço" />
+
+    </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textSoliCli"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Foi cortês?"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+
+        <RatingBar
+            android:id="@+id/ratingBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="1.5" />
+
+        <TextView
+            android:id="@+id/textSoliCli3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Foi organizado?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+        <RatingBar
+        android:id="@+id/ratingBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5" />
+
+
+        <TextView
+            android:id="@+id/textSoliCli5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Resolveu o problema?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+        <RatingBar
+        android:id="@+id/ratingBar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5" />
+
+
+        <TextView
+            android:id="@+id/textSoliCli2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Está satisfeito?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+        <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5" />
+
+
+        <TextView
+            android:id="@+id/textSoliCli4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Indicaria?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="21sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5" />
+
+    <Button
+        android:id="@+id/buttonCanSoli"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:text="Concluir a avaliação" />
+
+    </LinearLayout>
+
+
+</ScrollView>

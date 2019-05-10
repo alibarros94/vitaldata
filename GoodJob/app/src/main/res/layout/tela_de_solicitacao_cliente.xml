@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    tools:context=".TecnicoPerfil">
+
+
+    <TextView
+        android:id="@+id/textStatusSoli2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Status do serviço"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="122dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_perfiltecnico"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="171dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/star5_0" />
+
+    <TextView
+        android:id="@+id/textSoliCli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dados da solicitação:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/textNomeTecNoServ"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Nome do tecnico" />
+
+        <TextView
+            android:id="@+id/textTextData"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Data e Hora"
+            android:inputType="datetime" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/textProposta"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Valor combinado"
+            android:inputType="date"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="107dp"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/textTextDesc"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonAvaliarServ"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:text="Avaliar o serviço e o tecnico" />
+
+    <Button
+        android:id="@+id/buttonCanSoli"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="CANCELAR SOLICITAÇÃO" />
+
+    <Button
+        android:id="@+id/buttonFinalizarSoli"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="SERVIÇO CONCLUÌDO" />
+
+</LinearLayout>

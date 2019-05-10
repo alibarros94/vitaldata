@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    tools:context=".TecnicoPerfil">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Preencha os dados:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/editTextData"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Data"
+            app:met_mask="##/##/####"
+            android:inputType="date" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/editTextHora"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Hora"
+            android:inputType="datetime"
+            app:met_mask="##:##" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <com.santalu.maskedittext.MaskEditText
+            android:id="@+id/editProposta"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Sua proposta de valor"
+            android:inputType="date"
+            app:met_mask="######" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextLocal"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="Local"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="107dp"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <EditText
+            android:id="@+id/editTextDesc"
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSoli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SOLICITAR" />
+
+    <Button
+        android:id="@+id/buttonVoltar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="3dp"
+        android:background="@android:color/transparent"
+        android:text="Voltar" />
+
+</LinearLayout>

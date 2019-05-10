@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    tools:context=".TecnicoPerfil">
+
+    <ImageView
+        android:id="@+id/imagem_pessoa"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        tools:srcCompat="@drawable/ic_perfiltecnico" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/nomeTecnicos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:hint="Nome"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+        <TextView
+            android:id="@+id/emailTecnicos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+        <TextView
+            android:id="@+id/telefoneTecnicos"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Telefone"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+        <TextView
+            android:id="@+id/TextFuncao"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Funçao: Tecnico"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        app:passwordToggleEnabled="true"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        app:passwordToggleEnabled="true">
+
+        <TextView
+            android:id="@+id/TextAvaliacao"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Avaliação" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagem_rating"
+                android:layout_width="253dp"
+                android:layout_height="46dp"
+                tools:src="@drawable/star5_0" />
+
+            <TextView
+                android:id="@+id/textNumAvaList02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.00"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonVerMaisAv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:text="Click aqui pra ver mais detalhes"
+            android:textSize="10sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Selecione o serviço abaixo:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"/>
+
+    <ListView
+        android:id="@+id/listaServicos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

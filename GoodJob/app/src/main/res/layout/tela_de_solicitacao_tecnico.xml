@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp">
+
+
+    <TextView
+        android:id="@+id/textStatusSoli3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Status do serviço"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="122dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/ic_perfiltecnico"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="171dp"
+        android:layout_height="28dp"
+        app:srcCompat="@drawable/star5_0" />
+
+    <TextView
+        android:id="@+id/textSoliTec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Dados da solicitação:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="24sp" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/textNomeTecNoServ2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Nome do tecnico" />
+
+        <TextView
+            android:id="@+id/textTextData2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Data e Hora"
+            android:inputType="datetime" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/textProposta2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:hint="Valor combinado"
+            android:inputType="date"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="107dp"
+        android:layout_gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/textTextDesc2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/buttonAceitarServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:background="@color/colorPrimary"
+        android:text="Aceitar" />
+
+    <Button
+        android:id="@+id/buttonRecusarServ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:text="Recusar" />
+</LinearLayout>
+
+
+</LinearLayout>
